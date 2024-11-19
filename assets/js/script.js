@@ -61,3 +61,17 @@ const activeElem = function () {
 }
 
 addEventOnElem(window, "scroll", activeElem);
+function openPopup() {
+  const popup = document.getElementById("eventPopup");
+  popup.classList.remove("hidden");
+}
+
+function closePopup() {
+  const popup = document.getElementById("eventPopup");
+  popup.classList.add("hidden");
+}
+
+function openPaymentPage() {
+  window.open("https://rzp.io/rzp/7daytech", "_blank");
+}
+

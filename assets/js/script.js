@@ -61,17 +61,24 @@ const activeElem = function () {
 }
 
 addEventOnElem(window, "scroll", activeElem);
+// Function to show the popup
 function openPopup() {
-  const popup = document.getElementById("eventPopup");
-  popup.classList.remove("hidden");
+  const popup = document.getElementById('popup');
+  if (popup) {
+    popup.classList.remove('hidden');
+  }
 }
 
+// Function to hide the popup
 function closePopup() {
-  const popup = document.getElementById("eventPopup");
-  popup.classList.add("hidden");
+  const popup = document.getElementById('popup');
+  if (popup) {
+    popup.classList.add('hidden');
+  }
 }
 
+// Function to redirect to the payment page
 function openPaymentPage() {
-  window.open("https://rzp.io/rzp/7daytech", "_blank");
+  const paymentUrl = "https://rzp.io/rzp/7daytech";
+  window.open(paymentUrl, "_blank");
 }
-

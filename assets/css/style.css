@@ -1197,7 +1197,6 @@ body {
    */
 
   .hero .container {
-    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
@@ -1376,7 +1375,10 @@ body {
     right: 120px;
     z-index: 1;
   }
-
+  .video-banner {
+    max-width: 75%;
+    margin-inline: auto;
+  }
 
 
   /**
@@ -1420,7 +1422,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(150, 150, 150, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;

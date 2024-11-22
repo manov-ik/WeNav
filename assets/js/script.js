@@ -82,3 +82,7 @@ function openPaymentPage() {
   const paymentUrl = "https://rzp.io/rzp/7daytech";
   window.open(paymentUrl, "_blank");
 }
+
+function toggleFAQ(faqElement) {
+  faqElement.classList.toggle("open");
+}

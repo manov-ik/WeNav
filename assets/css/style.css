@@ -1524,3 +1524,186 @@ body {
     font-size: 0.9rem;
   }
 }
+
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff8e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq {
+  border: 1px solid #ffd479;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.faq-header {
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.faq-header .icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-content {
+  display: none;
+  padding: 15px;
+  background-color: #ffefd0;
+  border-top: 1px solid #ffd479;
+}
+
+.faq.open .faq-content {
+  display: block;
+}
+
+.faq.open .faq-header .icon {
+  transform: rotate(180deg);
+}
+
+.register-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #ffc107;
+}
+.section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #ffd479;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 15px;
+  width: 80px;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+.association-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.association-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+}
+
+.scroll-content:hover {
+  animation-play-state: paused;
+}
+
+.scroll-item {
+  display: inline-block;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.scroll-item img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.scroll-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -215,6 +215,7 @@ body {
 .section-title {
   --color: var(--radical-red);
   text-align: center;
+  margin-top: 100px;
 }
 
 .section-title .span {
@@ -425,7 +426,6 @@ body {
 
 .hero .container {
   display: grid;
-  margin-top: 100px;
   gap: 40px;
 }
 
@@ -1187,7 +1187,7 @@ body {
 
   .container { max-width: 960px; }
 
-  .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .grid-list { grid-template-columns: repeat(3, 1fr); }
 
   :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
 
@@ -1440,11 +1440,12 @@ body {
 .popup-content {
   position: relative;
   width: 90%;
+  height:fit-content;
   max-width: 500px;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(15px);

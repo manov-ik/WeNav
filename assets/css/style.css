@@ -292,6 +292,13 @@ body {
   display: grid;
   gap: 30px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .category-card,
 .stats-card { background-color: hsla(var(--color), 0.1); }
@@ -1190,6 +1197,7 @@ body {
   .grid-list { grid-template-columns: repeat(3, 1fr); }
 
   :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  :is(.stats) .grid-list { grid-template-columns: repeat(4, 1fr); }
 
 
 
@@ -1230,7 +1238,7 @@ body {
   }
 
 
-
+ .grid{ grid-template-columns: 1fr 1fr 1fr; }
   /**
    * FOOTER
    */
@@ -1616,13 +1624,7 @@ body {
   color: #333;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .card {
   background-color: #fff;
@@ -1691,7 +1693,7 @@ body {
 }
 
 .scroll-item img {
-  width: 80px;
+  width: 50px;
   height: auto;
   display: block;
   margin: 0 auto;

@@ -86,3 +86,44 @@ function openPaymentPage() {
 function toggleFAQ(faqElement) {
   faqElement.classList.toggle("open");
 }
+
+//typing
+document.addEventListener("DOMContentLoaded", () => {
+  const dynamicTxt = document.querySelector(".dynamic-txt");
+  const phrases = [
+    "Are You Ready to Dive into the Future of Tech?",
+    "Could Tech Be Your Perfect Fit?",
+    "Developer",
+    "Which Cutting-Edge Tech Field Will You Explore Next?",
+    "Find out with us!!!!"
+  ];
+  
+  let index = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typeEffect() {
+    const currentPhrase = phrases[index];
+    
+    if (!deleting) {
+      dynamicTxt.textContent = currentPhrase.slice(0, charIndex++);
+      if (charIndex > currentPhrase.length) {
+        deleting = true;
+        setTimeout(typeEffect, 2000);  // Pause before deleting
+      } else {
+        setTimeout(typeEffect, 100);  // Typing speed
+      }
+    } else {
+      dynamicTxt.textContent = currentPhrase.slice(0, charIndex--);
+      if (charIndex < 0) {
+        deleting = false;
+        index = (index + 1) % phrases.length;
+        setTimeout(typeEffect, 500);  // Pause before typing next
+      } else {
+        setTimeout(typeEffect, 50);  // Deleting speed
+      }
+    }
+  }
+
+  typeEffect();
+});

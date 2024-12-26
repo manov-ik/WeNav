@@ -1741,13 +1741,14 @@ body {
   color: var(--radical-red);
   font-size: var(--fs-2);
   text-align: center;
-  margin-block: 18px 20px;
+  margin: 18px auto 30px; /* Added extra bottom margin */
   border-right: 3px solid #333;
-  white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  animation: blink 0.6s step-end infinite;
+  display: inline;
+  animation: blink 0.6s steps(1) infinite;
+  white-space: normal; /* Allow natural line breaks */
+  word-wrap: break-word; /* Break long words if necessary */
+  line-height: 1.2; /* Adjust line spacing */
 }
 
 @keyframes typing {
